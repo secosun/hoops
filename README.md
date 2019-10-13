@@ -5,7 +5,7 @@ This repo contains all you need for building Docker containers from official HOO
 You will need to have docker installed. The reccomended way is to use [docker-install](https://github.com/docker/docker-install).
 
 1. Extract your communicator package.
-1. Copy the contents of the folder in this repo corresponding to the communicator release into the root directory of the package.
+1. Copy the contents of this repo into the root folder of your communicator package.
 1. Open a new terminal in the root of the package.
 1. Build the docker files by running the appropriate commands (see below).
 
@@ -40,13 +40,13 @@ You may append any additional [command line parameters](https://docs.techsoft3d.
 ## SSR Viewer
 The container is setup to start the sc streaming server listening for connections on port `55555`.  You should map a host port to this port for your container.  The container is also setup to configure the SC Streaming Server to launch in SSR mode and to search for models in the `/opt/ts3d/models` folder.  You should bind mount a folder containing your models to this path in the container. 
 
-### Additional Configuration
+#### Additional Configuration
 You will need to install docker and the [NVIDIA Container Toolkit](https://github.com/NVIDIA/nvidia-docker).
-Ensure that you have a recent NVIDIA driver that supports GLVND and EGL 1.5.  NVIDIA 430+ is sufficient.
-Ensure that you can run GPU enabled containers by using the following command: 
-```sudo docker run -it --gpus all nvidia/opengl:base nvidia-smi```
-If everything is working correctly, you should see diagnostic driver output.
-_Note:_ GPU processes running on the host will not be reflected on the output from within the container.
+
+- Ensure that you have a recent NVIDIA driver that supports GLVND and EGL 1.5.  NVIDIA 430+ is sufficient.
+- Ensure that you can run GPU enabled containers by using the following command: `sudo docker run -it --gpus all nvidia/opengl:base nvidia-smi`
+- If everything is working correctly, you should see diagnostic driver output.  
+   _Note:_ GPU processes running on the host will not be reflected on the output from within the container.
 
 #### Building
 Run the following command in your terminal: `sudo docker build -t techsoft3d/communicator-ssr -f ssr.Dockerfile .`
