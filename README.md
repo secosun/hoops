@@ -5,7 +5,7 @@ This repo contains all you need for building Docker containers from official HOO
 You will need to have docker installed. The reccomended way is to use [docker-install](https://github.com/docker/docker-install).
 
 1. Extract your communicator package.
-1. Copy the contents of this repo into the root folder of your communicator package.
+1. Copy the contents of the folder corresponding to your communicator version into the root of the package.
 1. Open a new terminal in the root of the package.
 1. Build the docker files by running the appropriate commands (see below).
 
