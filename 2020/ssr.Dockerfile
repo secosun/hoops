@@ -2,7 +2,6 @@ FROM nvidia/opengl:1.1-glvnd-runtime-ubuntu16.04
 
 LABEL maintainer "Tech Soft 3D <support@techsoft3d.com>"
 
-ENV TS3D_SSR_USE_EGL=1
 ENV LD_LIBRARY_PATH=/opt/ts3d/bin/linux64
 EXPOSE 55555
 
