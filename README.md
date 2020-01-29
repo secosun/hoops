@@ -1,5 +1,5 @@
 # communicator-docker
-This repo contains all you need for building Docker containers from official HOOPS Communicator Packages.
+This repo contains all you need for building Docker containers from official HOOPS Communicator Packages. See our [official documentation](https://docs.techsoft3d.com/communicator/latest/build/prog_guide/docker-support.html) for more information.
 
 ## Basic Configuration
 You will need to have docker installed. The reccomended way is to use [docker-install](https://github.com/docker/docker-install). 
