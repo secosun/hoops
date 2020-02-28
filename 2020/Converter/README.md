@@ -1,5 +1,5 @@
 # HOOPS Converter
-The container is setup to run HOOPS Converter via [xvfb](https://en.wikipedia.org/wiki/Xvfb) and provide easy conversions out of the box.  To use this container, you will need to bind mount and input and output directories.  Paths in the command line invocation should be valid for the paths inside the container.
+The container is setup to run HOOPS Converter via [xvfb](https://en.wikipedia.org/wiki/Xvfb) and provide easy conversions out of the box. To use this container, you will need to bind mount input and output directories. Paths in the command line invocation should be valid for the paths inside the container.
 
 ## Building
 Run the following command in your terminal: `docker build -t techsoft3d/communicator-converter -f converter.Dockerfile .`
