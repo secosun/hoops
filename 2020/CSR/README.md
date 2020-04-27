@@ -10,4 +10,4 @@ Example docker run invocation:
 docker run -p 55555:55555 --mount type=bind,source=/path/to/model/dir,target=/opt/ts3d/models  techsoft3d/communicator-csr --id <your id> --license '<your licence key>'
 ```
 
-You may append any additional [command line parameters](https://docs.techsoft3d.com/communicator/latest/build/server-command-line-options.html) accepted by the SC Streaming Server to your docker run command.
+You may append any additional [command line parameters](https://docs.techsoft3d.com/communicator/latest/build/prog_guide/servers/stream_cache_server/command-line-options.html) accepted by the SC Streaming Server to your docker run command.
